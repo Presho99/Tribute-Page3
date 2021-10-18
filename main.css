@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b83a01;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  margin: 50px;
+  padding: 5px;
+  width: 1000px;
+  height: 500px;
+}
+
+.left {
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  left: 0;
+  top: 0;
+  background: url(./image/img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.left .nav {
+  position: absolute;
+}
+
+.left .nav ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left .nav ul a {
+  text-decoration: none;
+}
+
+.left .nav ul li {
+  list-style-type: none;
+  margin-left: 30px;
+  color: rgb(141, 132, 132);
+}
+
+.left .nav ul li:hover {
+  color: #b83a01;
+}
+
+.right {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  z-index: 0;
+}
+
+.right .bars {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  color: rgb(141, 132, 132);
+  cursor: pointer;
+}
+
+.right .content {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+}
+
+.right .content h1 {
+  font-size: 45px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+  color: #b83a01;
+}
+
+.right .content p {
+  letter-spacing: 1px;
+  color: rgb(141, 132, 132);
+}
+
+.right .content a {
+  text-decoration: none;
+  color: #b83a01;
+  margin-left: 100px;
+}
+
+.right .content a:hover {
+  color: rgb(141, 132, 132);
+}
